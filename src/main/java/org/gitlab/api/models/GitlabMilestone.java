@@ -25,6 +25,9 @@ public class GitlabMilestone {
     @JsonProperty("due_date")
     private Date dueDate;
 
+    @JsonProperty("start_date")
+    private Date startDate;
+
     private String state;
 
     @JsonProperty("updated_date")
@@ -87,6 +90,14 @@ public class GitlabMilestone {
 
     public void setDueDate(Date dueDate) {
         this.dueDate = dueDate;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
     }
 
     public String getState() {
